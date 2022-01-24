@@ -8,4 +8,13 @@
 - US = usuario.
 - PASSWORD = senha.
 - HOTS = endereço de rede do banco de dado (caso seja no proprio computador coloque = localhost).
-- TYPEDB = dialeto do banco de dados sql (caso o banco seja Mysql coloque = mysql)
+- TYPEDB = dialeto do banco de dados sql (caso o banco seja Mysql coloque = mysql).
+
+
+**#Exemplo:
+- PORT = 3000.
+- DB = meubanco.
+- US = root.
+- PASSWORD = minhasenha.
+- HOTS = localhost.
+- TYPEDB = mysql.
