@@ -1,7 +1,7 @@
 # Anotador-de-Tarefa---Node.js---Mysql
  Anotador de Tarefas com back-end em node.js + mysql
 
-#Como configurar o arquivo .ENV:
+**#Como configurar o arquivo .ENV:**
 
 PORT = porta que a aplicação vai rodar.
 DB = nome do banco de dados.
