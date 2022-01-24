@@ -21,3 +21,5 @@
 - PASSWORD = minhasenha.
 - HOTS = localhost.
 - TYPEDB = mysql.
+
+**(Ainda sem versão Mobile)
