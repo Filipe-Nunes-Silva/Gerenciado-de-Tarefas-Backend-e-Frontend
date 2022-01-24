@@ -1,6 +1,9 @@
 # Anotador-de-Tarefa---Node.js---Mysql
  Anotador de Tarefas com back-end em node.js + mysql
 
+#Adicione a pasta node_modules com o comando:
+- npm install
+
 **#Como configurar o arquivo .ENV:**
 
 - PORT = porta que a aplicação vai rodar.
@@ -11,7 +14,7 @@
 - TYPEDB = dialeto do banco de dados sql (caso o banco seja Mysql coloque = mysql).
 
 
-***Exemplo:
+#Exemplo:
 - PORT = 3000.
 - DB = meubanco.
 - US = root.
