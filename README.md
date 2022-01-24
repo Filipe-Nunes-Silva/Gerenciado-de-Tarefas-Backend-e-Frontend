@@ -11,7 +11,7 @@
 - TYPEDB = dialeto do banco de dados sql (caso o banco seja Mysql coloque = mysql).
 
 
-**#Exemplo:
+**Exemplo:
 - PORT = 3000.
 - DB = meubanco.
 - US = root.
