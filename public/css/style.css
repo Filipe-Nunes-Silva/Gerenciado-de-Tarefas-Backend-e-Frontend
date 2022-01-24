@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    height: 60px;
+    padding: 10px;
+    flex-shrink: 0;
+    display: flex;
+    background-color: #db4c3f;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 3px 0px #000;
+}
+.menu h2{
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+nav ul li{
+    padding: 5px 15px 5px 15px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border:1px solid #db4c3f;
+    font-weight: bold;
+
+    transition-property: background-color,border,border-radius;
+    transition: 200ms;
+}
+nav ul li a:hover{
+    background-color: #c22c1e;
+    border:1px solid #fff;
+    border-radius: 15px;
+}
+/*------------------------------------------------Conteudo Site-------------------------------------------------*/
+.container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+h1,h2{
+    font-family: 'Bungee', cursive;
+}
+/*-----------------------------------------------Adicionar Tarefa-----------------------------------------------*/
+.form-criar-tarefa{
+    margin-top: 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.form-criar-tarefa label{
+    font-weight: bold;
+}
+.add-titulo{
+    width: inherit;
+}
+label,textarea,input{
+    width: 100%;
+}
+label{
+    font-size: 18px;
+}
+input,textarea{
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid #4F4F4F;
+}
+input[type="submit"]{
+    background-color:#db4c3f;
+    border:0;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px 0px #000;
+    border-radius: 5px;
+    color: #fff;
+
+    transition-property: all;
+    transition-duration: 200ms;
+}
+input[type="submit"]:hover{
+    background-color: #c22c1e;
+    transform: scale(1.05);
+}
+.voltar-btn{
+    text-align: center;
+    background-color:#db4c3f;
+    border:0;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px 0px #000;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+
+    transition-property: all;
+    transition-duration: 200ms;
+}
+.voltar-btn{
+    text-decoration: none;
+    color: #fff;
+}
+.voltar-btn:hover{
+    background-color: #c22c1e;
+    transform: scale(1.05);
+}
+/*----------------------------------Mostrar Todas Tarefas Não Concluidas----------------------------------------*/
+.lista-tarefas{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.tarefa{
+    height: 200px;
+    max-width:40%;
+    min-width: 40%;
+    padding: 20px;
+    margin-top: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+
+    transition-property: all;
+    transition-duration: 300ms;
+}
+.tarefa:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 9px -3px #000;
+}
+.titulo,.opcoes{
+    width: 100%;
+}
+.titulo{
+    flex: 1;
+    max-width:100%;
+    overflow: hidden;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.titulo a{
+    color: #000;
+    text-decoration: none;
+}
+.opcoes{
+    padding: 8px 8px 20px 8px;
+    display: flex;
+    justify-content: space-evenly;
+    color: #000;
+    border-bottom: 1px solid #b3a9a9;
+}
+.opcoes a{
+    color: #000;
+    font-size: 26px;
+}
+.opcoes-btns{
+    color: #000;
+    font-size: 26px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.opcoes .bi:hover{
+    transition-duration: 200ms;
+    color: #DB4C3F;
+}
+/*----------------------------------Mostrar Todas Tarefas Concluidas----------------------------------------*/
+.tarefa.concluida{
+    opacity: 0.7;
+}
+.concluida a{
+    color: #999;
+    text-decoration: line-through;
+}
+.bi.concluido{
+    display: none;
+}
+/*---------------------------------------------Pagina Confirmação-----------------------------------------------*/
+.confirmacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.confirma-titulo{
+    padding: 15px;
+}
+.confirma-btns{
+    display: flex;
+    justify-content: space-around;
+}
+.btn-sim,.btn-voltar-nao{
+    width: 50px;
+    height: 40px;
+    margin: 0px 10px 0px 10px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0px #000;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    
+    transition-property: all;
+    transition-duration: 200ms;
+}
+.btn-sim{
+    background-color: #db4c3f; 
+}
+.btn-voltar-nao{
+    background-color: #db4c3f;
+    text-decoration: none;
+    font-size: 13.3333px;
+    text-align: center;
+    line-height: 40px;
+}
+.btn-sim:hover,.btn-voltar-nao:hover{
+    background-color: #c22c1e;
+    transform: scale(1.1);
+}
+.confirm{
+    margin: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #31c531;
+    display: none;
+}
+/*------------------------------------------------Pagina de Error-----------------------------------------------*/
+.error{
+    color: #f00;
+    font-size: 18px;
+}
+.error .btn{
+    width: auto;
+    margin-top: 30px;
+    padding: 0px 5px 0px 5px;
+}
+/*----------------------------------------------------Rodapé----------------------------------------------------*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #db4c3f;
+    color:#fff;
+    font-size: 13px;
+}

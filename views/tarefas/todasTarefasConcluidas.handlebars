@@ -1,0 +1,36 @@
+<div class="container">
+    <h1>Tarefas Feitas</h1>
+
+    <div class="lista-tarefas">
+
+       {{#each tarefas}}
+            {{#if this.concluida}}
+                <div class="tarefa concluida">
+                    <div class="titulo concluido">
+                        <a href="/editar/{{this.id}}">{{this.titulo}}</a>
+                    </div>
+                    <div class="opcoes">
+                        <form action="/status" method="post">
+                            <input type="hidden" name="link" value="/concluidas">
+                            <input type="hidden" name="id" value="{{this.id}}">
+                            <input type="hidden" name="concluida" value="{{this.concluida}}">
+                            <button class="opcoes-btns bi bi-check2-square" type="submit" title="Desmarcar Concluida"></button>
+                        </form>
+
+                        <a href="/editar/{{this.id}}" class="concluido bi bi-pencil-square"></a>
+
+                        <form action="/deletar" method="post">
+                            <input type="hidden" name="id" value="{{this.id}}">
+                            <input type="hidden" name="titulo" value="{{this.titulo}}">
+                            <button class="opcoes-btns bi bi-x-square" type="submit" title="Excluir"></button>
+                        </form>
+                        
+                    </div>
+                </div>
+            {{else}}
+                
+            {{/if}}
+        {{/each}}
+
+    </div>
+</div>

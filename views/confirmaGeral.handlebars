@@ -1,0 +1,16 @@
+<div class="container">
+
+    <div class="confirmacao">
+        <h2>{{msg}}</h2>
+        <p class="confirma-titulo">{{tarefa.titulo}}</p>
+        <div class="confirma-btns">
+            <form id="form" action="{{link}}" method="post">
+                <input type="hidden" name="id" value="{{value}}">
+                <button class="btn-sim" type="submit">Sim</button>
+            </form>
+            <a href="/" class="btn-voltar-nao">Não</a>
+        </div>
+        <p class="confirm">Concluido com sucesso!</p>
+    </div>
+
+</div>

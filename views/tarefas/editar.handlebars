@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Edição de Tarefa</h1>
+    <p>{{msg}}</p>
+    <form action="/editar" class="form-criar-tarefa" method="post">
+        <div class="add-titulo">
+            <input type="hidden" name="id" value="{{tarefaSelecionada.id}}">
+            <label for="titulo">Titulo:</label>
+            <input type="text" name="titulo" id="titulo" value="{{tarefaSelecionada.titulo}}">
+        </div>
+        <div class="add-descricao">
+            <label for="descricao">Descrição:</label>
+            <textarea name="descricao" id="descricao" cols="30" rows="10" >{{tarefaSelecionada.descricao}}</textarea>
+        </div>
+        <input type="submit" value="Modificar Tarefa!">
+        <a href="/" class="voltar-btn">Voltar</a>
+    </form>
+    
+
+</div>
