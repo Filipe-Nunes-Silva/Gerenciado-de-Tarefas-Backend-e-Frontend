@@ -1,6 +1,8 @@
 # Gerenciamento de Tarefas Front-end + Back-end.
  Gerenciador de tarefas com back-end em node.js com banco de dados Mysql e front-end feito com template handlebars.
 
+ ![Imagem do projeto funcionando](./img.gif)
+
 #Adicione a pasta node_modules com o comando:
 - npm install
 
