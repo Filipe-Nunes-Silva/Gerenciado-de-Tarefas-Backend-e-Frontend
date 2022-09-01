@@ -27,4 +27,5 @@ Exemplo .env:
 
 **3 - Iniciando aplicação:**
 - Use o comando 'npm start' para iniciar a aplicação!
-(Ainda sem versão Mobile)
+- 
+- (Ainda sem versão Mobile)
