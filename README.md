@@ -2,11 +2,13 @@
  Gerenciador de tarefas com back-end em node.js com banco de dados Mysql e front-end feito com template handlebars.
 
  ![Imagem do projeto funcionando](./img.gif)
+ 
+## Iniciando o projeto:
 
-#Adicione a pasta node_modules com o comando:
+**1 - Adicione a pasta node_modules com o comando:**
 - npm install
 
-**#Como configurar o arquivo .ENV:**
+**2 - Configure o arquivo .ENV:**
 
 - PORT = porta que a aplicação vai rodar.
 - DB = nome do banco de dados.
@@ -15,8 +17,7 @@
 - HOTS = endereço de rede do banco de dado (caso seja no proprio computador coloque = localhost).
 - TYPEDB = dialeto do banco de dados sql (caso o banco seja Mysql coloque = mysql).
 
-
-#Exemplo:
+Exemplo .env:
 - PORT = 3000.
 - DB = meubanco.
 - US = root.
@@ -24,4 +25,4 @@
 - HOTS = localhost.
 - TYPEDB = mysql.
 
-**(Ainda sem versão Mobile)
+(Ainda sem versão Mobile)
