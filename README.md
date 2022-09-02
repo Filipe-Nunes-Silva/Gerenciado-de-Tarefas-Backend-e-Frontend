@@ -4,6 +4,7 @@
  ![Imagem do projeto funcionando](./img.gif)
  
 ## Iniciando o projeto:
+Obs: Esse projeto é feito com back-end em Node.js e usa como banco de dados o Mysql, então para rodar esse projeto você precisa ter instalado as versões mais recentes do Node.js e do Mysql. Crie um banco de dados vazio no Mysql e preencha o arquivo .ENV como explicado abaixo!
 
 **1 - Adicione a pasta node_modules com o comando:**
 - npm install
